@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-image: url("main.png");
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            text-align: center;
+            display: inline-block;
+            margin-right: 10px; 
+            position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+        }
+        h1 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 15px;
+            font-size: 17px;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            font-weight: 500;
+            color: #000;
+            background-color: #fff;
+            border: none;
+            border-radius: 30px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            outline: none;
+            margin-bottom: 20px;
+            width: 400px;
+        }
+
+        button:hover {
+            background-color: #23c483;
+            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+            color: #fff;
+            transform: translateY(-7px);
+        }
+
+        button:active {
+            transform: translateY(-1px);
+        }
+
+        .police-logo {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+       
+        <button><a href="cp.php"><b>Commissioner Office</b></a></button>  
+        <button><a href="ps.php"><b>Police Station</b></a></button>
+        <button><a href="po.php" id="po"><b>Police Officer</b></a></button> 
+    </div>
+</body>
+</html>

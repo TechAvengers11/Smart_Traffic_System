@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Police Officer Alert System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        .btn-low {
+            background-color: #4CAF50;
+        }
+
+        .btn-medium {
+            background-color: #FFC107;
+        }
+
+        .btn-high {
+            background-color: #FF7043;
+        }
+
+        .btn-emergency {
+            background-color: #E53935;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Police Officer Alert System</h2>
+        <p>Select the level of urgency to send a message to the higher organization:</p>
+        <button class="btn btn-low" onclick="sendMessage('Low')">Low</button>
+        <button class="btn btn-medium" onclick="sendMessage('Medium')">Medium</button>
+        <button class="btn btn-high" onclick="sendMessage('High')">High</button>
+        <button class="btn btn-emergency" onclick="sendMessage('Emergency')">Emergency</button>
+    </div>
+
+    <script>
+        function sendMessage(urgency) {
+            // Here you can perform actions to send the message
+            alert('Message sent with urgency: ' + urgency);
+            // You can also make an AJAX request to a backend endpoint to send the message
+        }
+    </script>
+</body>
+
+</html>
